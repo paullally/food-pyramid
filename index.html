@@ -1,0 +1,441 @@
+<html>
+
+  <head>
+    <h1 align="center">Figure 1</h1>
+  </head>
+
+  <body>
+      <div class="pyramid">
+      
+    <div id="pyramid-level-7">
+    </div>
+    <div id="pyramid-level-6">
+      <div class="test">
+        <button onclick="add()" class="plus button">+</button>
+        <span id='value' style=background-color:grey>2</span>
+        <button onclick="take()" class="minus button">-</button>
+      </div>
+    </div>
+    <div id="pyramid-level-5">
+      <button onclick="add1()" class="plus button">+</button>
+      <span id='value1' style=background-color:grey>4</span>
+      <button onclick="take1()" class="minus button">-</button>
+    </div>
+    <div id="pyramid-level-4">
+      <button onclick="add2();" class="plus button">+</button>
+      <span id='value2' style=background-color:grey>3</span>
+      <button onclick="take2();" class="minus button">-</button>
+    </div>
+    <div id="pyramid-level-3">
+      <button onclick="add3();" class="plus button">+</button>
+      <span id='value3' style=background-color:grey>3</span>
+      <button onclick="take3()" class="minus button">-</button>
+    </div>
+    <div id="pyramid-level-2">
+      <button onclick="add4()" class="plus button">+</button>
+      <span id='value4' style=background-color:grey>4</span>
+      <button onclick="take4()" class="minus button">-</button>
+    </div>
+    <div id="pyramid-level-1">
+      <button onclick="add5()" class="plus button">+</button>
+      <span id='value5' style=background-color:grey>6</span>
+      <button onclick="take5()" class="minus button">-</button>
+    </div>
+    </div>
+  </body>
+
+
+  <footer align=center>
+    <h2>My food pyramid </h2>
+    <label for="d1">Enter today's date:</label>
+    <input type="date" id="d1">
+
+
+  </footer>
+
+
+
+  <script>
+    function add() {
+      var p = document.getElementById('value').innerHTML;
+      p++;
+      document.getElementById('value').innerHTML = p;
+      if (p > 2) {
+        document.getElementById("value").style.background = 'red';
+      }
+      if (p <= 0) {
+        p = 0
+        document.getElementById('value').innerHTML = p;
+      }
+
+
+
+
+
+
+    }
+
+    function take() {
+      var p = document.getElementById('value').innerHTML;
+      p--;
+      document.getElementById('value').innerHTML = p;
+
+      if (p <= 2) {
+        document.getElementById("value").style.background = 'grey';
+      }
+
+      if (p <= 0) {
+        p = 0
+        document.getElementById('value').innerHTML = p;
+      }
+    }
+
+    function add1() {
+      var p = document.getElementById('value1').innerHTML;
+      p++;
+      document.getElementById('value1').innerHTML = p;
+      if (p > 4) {
+        document.getElementById("value1").style.background = 'red';
+      }
+      if (p <= 0) {
+        p = 0
+        document.getElementById('value1').innerHTML = p;
+      }
+
+
+    }
+
+    function take1() {
+      var p = document.getElementById('value1').innerHTML;
+      p--;
+      document.getElementById('value1').innerHTML = p;
+
+      if (p <= 4) {
+        document.getElementById("value1").style.background = 'grey';
+      }
+      if (p <= 0) {
+        p = 0
+        document.getElementById('value1').innerHTML = p;
+      }
+    }
+
+    function add2() {
+      var p = document.getElementById('value2').innerHTML;
+      p++;
+      document.getElementById('value2').innerHTML = p;
+
+
+      if (p > 3) {
+        document.getElementById("value2").style.background = 'red';
+      }
+      if (p <= 0) {
+        p = 0
+        document.getElementById('value2').innerHTML = p;
+      }
+    }
+
+    function take2() {
+      var p = document.getElementById('value2').innerHTML;
+      p--;
+      document.getElementById('value2').innerHTML = p;
+
+      if (p <= 3) {
+        document.getElementById("value2").style.background = 'grey';
+      }
+      if (p <= 0) {
+        p = 0
+        document.getElementById('value2').innerHTML = p;
+      }
+
+
+    }
+
+    function add3() {
+      var p = document.getElementById('value3').innerHTML;
+      p++;
+      document.getElementById('value3').innerHTML = p;
+
+      if (p > 3) {
+        document.getElementById("value3").style.background = 'red';
+      }
+      if (p <= 0) {
+        p = 0
+        document.getElementById('value3').innerHTML = p;
+      }
+    }
+
+    function take3() {
+      var p = document.getElementById('value3').innerHTML;
+      p--;
+      document.getElementById('value3').innerHTML = p;
+      if (p <= 3) {
+        document.getElementById("value3").style.background = 'grey';
+      }
+      if (p <= 0) {
+        p = 0
+        document.getElementById('value3').innerHTML = p;
+      }
+    }
+
+
+    function add4() {
+      var p = document.getElementById('value4').innerHTML;
+      p++;
+      document.getElementById('value4').innerHTML = p;
+      if (p > 4) {
+        document.getElementById("value4").style.background = 'red';
+      }
+      if (p <= 0) {
+        p = 0
+        document.getElementById('value4').innerHTML = p;
+      }
+
+    }
+
+    function take4() {
+      var p = document.getElementById('value4').innerHTML;
+      p--;
+      document.getElementById('value4').innerHTML = p;
+
+      if (p <= 4) {
+        document.getElementById("value4").style.background = 'grey';
+      }
+      if (p <= 0) {
+        p = 0
+        document.getElementById('value4').innerHTML = p;
+      }
+    }
+
+
+    function add5() {
+      var p = document.getElementById('value5').innerHTML;
+      p++;
+      document.getElementById('value5').innerHTML = p;
+      if (p > 6) {
+        document.getElementById("value5").style.background = 'red';
+      }
+      if (p <= 0) {
+        p = 0
+        document.getElementById('value5').innerHTML = p;
+      }
+    }
+
+    function take5() {
+      var p = document.getElementById('value5').innerHTML;
+      p--;
+      document.getElementById('value5').innerHTML = p;
+
+      if (p <= 6) {
+        document.getElementById("value5").style.background = 'grey';
+      }
+      if (p <= 0) {
+        p = 0
+        document.getElementById('value5').innerHTML = p;
+      }
+    }
+
+  </script>
+  <style>
+  
+  .pyramid
+  {
+     min-width:800px; 
+  }
+  
+  
+    #pyramid-level-7 {
+      border-bottom: 75px solid #ba2200;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      height: 0;
+      width: 0;
+      margin-right: auto;
+      margin-left: auto;
+
+    }
+
+    #pyramid-level-6 {
+      border-bottom: 75px solid #ba2200;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      height: 0;
+      width: 100px;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 10px;
+      text-align: center;
+      user-select: none;
+
+    }
+
+    #pyramid-level-6 button {
+      visibility: hidden;
+    }
+
+    #pyramid-level-6:hover button {
+      visibility: visible;
+
+    }
+
+
+    #pyramid-level-5 {
+      border-bottom: 75px solid #c29800;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      height: 0;
+      width: 200px;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 10px;
+      text-align: center;
+      user-select: none;
+
+    }
+
+    #pyramid-level-5 button {
+      visibility: hidden;
+    }
+
+    #pyramid-level-5:hover button {
+      visibility: visible;
+
+    }
+
+
+    #pyramid-level-4 {
+      border-bottom: 75px solid #ffee00;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      height: 0;
+      width: 300px;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+      user-select: none;
+    }
+
+    #pyramid-level-4 button {
+      visibility: hidden;
+    }
+
+    #pyramid-level-4:hover button {
+      visibility: visible;
+
+    }
+
+
+
+    #pyramid-level-3 {
+      border-bottom: 75px solid #0084ff;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      height: 0;
+      width: 400px;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+      user-select: none;
+    }
+
+    #pyramid-level-3 button {
+      visibility: hidden;
+    }
+
+    #pyramid-level-3:hover button {
+      visibility: visible;
+
+    }
+
+    #pyramid-level-2 {
+      border-bottom: 75px solid #964B00;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      height: 0;
+      width: 500px;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+      user-select: none;
+    }
+
+    #pyramid-level-2 button {
+      visibility: hidden;
+    }
+
+    #pyramid-level-2:hover button {
+      visibility: visible;
+
+    }
+
+
+
+    #pyramid-level-1 {
+      position: relative;
+      border-bottom: 75px solid #31a337;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      height: 0;
+      width: 600px;
+      margin-right: auto;
+      margin-left: auto;
+
+      text-align: center;
+      user-select: none;
+
+
+    }
+
+
+    #pyramid-level-1 button {
+      visibility: hidden;
+    }
+
+    #pyramid-level-1:hover button {
+      visibility: visible;
+
+    }
+
+
+    button {
+
+      border-radius: 25px;
+      height: 30px;
+      width: 30px;
+      font-size: 18.5px;
+      background-color: grey;
+      color: white;
+      border: 1px solid black;
+      text-align: center;
+      user-select: none;
+
+    }
+
+    span {
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      font-size: 17.5px;
+      color: white;
+      padding: 5px;
+      border: 1px solid black;
+      text-align: center;
+      display: inline-block;
+      user-select: none;
+      margin-top: 5%;
+    }
+
+    h1 {
+      user-select: none;
+    }
+
+
+
+    footer {
+      user-select: none;
+      text-align: center;
+    }
+
+  </style>
+
+
+</html>
